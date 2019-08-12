@@ -21,6 +21,18 @@ attr_accessor :x, :y, :z,
       kind = :scalene
     end
   end
+  
+    def distinct_side_lengths
+    sides.uniq.count
+  end
+
+  def zero_or_negative_side?
+    sides.any? {|side| side <= 0 }
+  end
+
+  def satisfies_triangle_inequality?
+    0 < sides.inject(&:+) - 2 * sides.max
+  end
 end
 
 
