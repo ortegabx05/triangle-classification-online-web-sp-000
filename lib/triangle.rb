@@ -22,7 +22,7 @@ eattr_accessor :x, :y, :z,
     end
   end
 end
-end
+
 
 class TriangleError < StandardError
   def message
