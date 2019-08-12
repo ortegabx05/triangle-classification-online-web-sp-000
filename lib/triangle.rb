@@ -20,6 +20,7 @@ attr_accessor :x, :y, :z,
     else
       kind = :scalene
     end
+  end
 end
 
 
