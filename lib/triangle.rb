@@ -1,5 +1,5 @@
 class Triangle
-eattr_accessor :x, :y, :z,
+attr_accessor :x, :y, :z,
   :equilateral, :isosceles, :scalene
 
    def initialize(x, y, z)
@@ -20,7 +20,6 @@ eattr_accessor :x, :y, :z,
     else
       kind = :scalene
     end
-  end
 end
 
 
